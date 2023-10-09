@@ -1,3 +1,12 @@
+// EemanQadeer_i200911_Assignment01
+
+//To implement these functions in Go Lang
+//func NewBlock(transaction string, nonce int, previousHash string) *block 
+// func DisplayBlocks() 
+// func ChangeBlock()
+//func VerifyChain() 
+//func CalculateHash (stringToHash string) 
+
 package main
 
 import (
@@ -120,12 +129,13 @@ func main() {
 	blockchain.DisplayBlocks()
 
 	// Change the transaction of the second block
+    //If I dont comment the below line then the block will be invalid
 	//blockchain.ChangeBlock(1, "New transaction")
 
 	// Verify the blockchain
 	if blockchain.VerifyChain() {
-		fmt.Println("---------Blockchain is valid--------------")
+		fmt.Println("-------------------------Blockchain is valid--------------------")
 	} else {
-		fmt.Println("-----------Blockchain is not valid------------")
+		fmt.Println("---------------------Blockchain is invalid----------------------")
 	}
 }
